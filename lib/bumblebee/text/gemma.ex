@@ -421,7 +421,6 @@ defmodule Bumblebee.Text.Gemma do
           num_key_value_heads: {"num_key_value_heads", number()},
           intermediate_size: {"intermediate_size", number()},
           activation: {"hidden_act", activation()},
-          head_dim: {"head_dim", number()},
           use_attention_bias: {"attention_bias", boolean()},
           rotary_embedding_base: {"rope_theta", number()},
           rotary_embedding_scaling_strategy:
