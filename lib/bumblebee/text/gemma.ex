@@ -295,8 +295,7 @@ defmodule Bumblebee.Text.Gemma do
         name: "output_norm",
         shift: 1.0,
         epsilon: spec.layer_norm_epsilon,
-        upcast: :all,
-        initializer: :zeros
+        upcast: :all
       )
 
     %{
@@ -352,8 +351,7 @@ defmodule Bumblebee.Text.Gemma do
           shift: 1.0,
           name: &2,
           epsilon: spec.layer_norm_epsilon,
-          upcast: :all,
-          initializer: :zeros
+          upcast: :all
         ),
       ffn:
         &gated_ffn(&1, spec.intermediate_size, spec.hidden_size,
